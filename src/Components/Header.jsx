@@ -5,9 +5,6 @@ import { useState } from "react";
 const gameImage =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFvJW5kaBILKrHvfaldjNEwSdcfsSB26hrg-m13jrGHQQ1KwBCNpSZ0kI&s=10";
 
-const downloadUrl =
-  "https://666rs2fs.com/s/80A66581142";
-
 function Header() {
   const [open, setOpen] = useState(false);
 
@@ -35,8 +32,8 @@ function Header() {
           <div className="h-[52px] w-[52px] shrink-0 overflow-hidden rounded-2xl border border-yellow-400/40 bg-slate-900 sm:h-[58px] sm:w-[58px]">
             <img
               src={gameImage}
-              alt="Luckywheel777 Logo"
-              className="block h-full w-full "
+              alt="RS666 Pak Game Logo"
+              className="block h-full w-full"
             />
           </div>
 
@@ -53,7 +50,7 @@ function Header() {
 
         {/* DESKTOP NAVIGATION */}
         <nav className="hidden items-center justify-center gap-8 lg:flex">
-          <NavLink to="/" className={navClass}>
+          <NavLink to="/" end className={navClass}>
             Home
           </NavLink>
 
@@ -74,15 +71,13 @@ function Header() {
         <div className="flex shrink-0 items-center justify-end">
 
           {/* DESKTOP DOWNLOAD BUTTON */}
-          <a
-            href={downloadUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
             className="hidden items-center gap-2 rounded-xl bg-yellow-400 px-6 py-3.5 text-[15px] font-extrabold text-slate-950 transition hover:bg-yellow-300 lg:flex"
           >
             <Download size={18} strokeWidth={2.5} />
             Download
-          </a>
+          </button>
 
           {/* MOBILE MENU BUTTON */}
           <button
@@ -108,6 +103,7 @@ function Header() {
 
             <NavLink
               to="/"
+              end
               onClick={closeMenu}
               className={({ isActive }) =>
                 `border-b border-white/10 py-4 text-[15px] font-semibold ${
