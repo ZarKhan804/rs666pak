@@ -1,20 +1,19 @@
 
 import { Helmet } from "react-helmet-async";
 
-import ContactHero from "./ContactHero";
-import ContactForm from "./ContactForm";
+import DownloadHero from "./DownloadHero";
 import InternalLinksArticle from "./InternalLinksArticle";
 import Article from "./Article";
 
-function Contact() {
+function Download() {
   return (
     <>
       <Helmet>
-        <title>Contact 666RS | Support & Assistance</title>
+        <title>666RS Download Guide | Mobile Access Information</title>
 
         <meta
           name="description"
-          content="Contact 666RS for general questions, feedback, website information, account guidance, and assistance with gaming-related queries."
+          content="Explore the 666RS download and mobile access guide, compatible device information, application safety, account guidance, and general gaming resources."
         />
 
         <meta
@@ -24,22 +23,22 @@ function Contact() {
 
         <link
           rel="canonical"
-          href="https://www.rs666pak.com/contact"
+          href="https://www.rs666pak.com/download"
         />
 
         <meta
           property="og:title"
-          content="Contact 666RS | Support & Assistance"
+          content="666RS Download Guide | Mobile Access Information"
         />
 
         <meta
           property="og:description"
-          content="Find 666RS contact information, website guidance, account security tips, and answers to general gaming-related questions."
+          content="Learn about 666RS mobile access, application information, device compatibility, account guidance, and general gaming resources."
         />
 
         <meta
           property="og:url"
-          content="https://www.rs666pak.com/contact"
+          content="https://www.rs666pak.com/download"
         />
 
         <meta
@@ -53,18 +52,13 @@ function Contact() {
         />
 
         <meta
-          name="twitter:card"
-          content="summary_large_image"
-        />
-
-        <meta
           name="twitter:title"
-          content="Contact 666RS | Support & Assistance"
+          content="666RS Download Guide | Mobile Access Information"
         />
 
         <meta
           name="twitter:description"
-          content="Find 666RS contact information, website guidance, account security tips, and answers to general gaming-related questions."
+          content="Learn about 666RS mobile access, application information, device compatibility, account guidance, and general gaming resources."
         />
 
         <meta
@@ -74,8 +68,7 @@ function Contact() {
       </Helmet>
 
       <main id="main-content">
-        <ContactHero />
-        <ContactForm />
+        <DownloadHero />
         <InternalLinksArticle />
         <Article />
       </main>
@@ -83,4 +76,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Download;
