@@ -1,4 +1,12 @@
 {
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "rs666pak.com" }],
+      "destination": "https://www.rs666pak.com/$1",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/robots.txt", "destination": "/robots.txt" },
@@ -7,15 +15,7 @@
   "headers": [
     {
       "source": "/sitemap.xml",
-      "headers": [
-        { "key": "Content-Type", "value": "application/xml" }
-      ]
-    },
-    {
-      "source": "/robots.txt",
-      "headers": [
-        { "key": "Content-Type", "value": "text/plain" }
-      ]
+      "headers": [{ "key": "Content-Type", "value": "application/xml" }]
     }
   ]
 }
